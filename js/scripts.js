@@ -16,15 +16,25 @@ $(document).ready(function() {
     const mother = parseInt($("input:radio[name=mother]:checked").val());
     const total = add(wallet, wasp, mother);
 
-    if (gender === 1 && ((total <= 3))){
-      $('#python').show();
-    } else if (gender === 1 && ((total <= 6))){
-      $('#go').show();
-    } else if (gender === (2,3) && ((total <= 3))){
-      $('#python').show();
-    } else if (gender === (2,3) && ((total <= 8))){
-      $('#go').show();
-    } else 
-      $('#javascript').show();
+    if (age) {
+      if (age > 55) {
+        $('#cobol').show();
+      } else if (gender === 1 && ((total <= 3))){
+        $('#python').show();
+      } else if (gender === 1 && ((total <= 6))){
+        $('#go').show();
+      } else if (gender === 2 && ((total <= 3))){
+        $('#python').show();
+      } else if (gender === 2 && ((total <= 8))){
+        $('#go').show();
+      } else if (gender === 3 && ((total <= 3))){
+        $('#python').show();
+      } else if (gender === 3 && ((total <= 4))){
+        $('#go').show();
+      } else 
+        $('#javascript').show();
+    } else {
+      alert('Please enter your age.');
+    }   
   });
 });

@@ -19,6 +19,10 @@
       <form id="quiz">
         <div class="row">
           <div class="col">
+            <label for="person">A name</label>
+            <input id="person" class="form-control" type="text">
+          </div>
+          <div class="col">
             <label for="gender">Gender</label>
             <select class="form-control" id="gender">
               <option value="1">Female</option>
@@ -100,21 +104,32 @@
       <button type="submit" class="btn btn-light btn-block">Show me my match!</button>
     
     <div class="container" id="results">
+        
         <div id="python">
           <h3>Python</h3>
-          <p>You should learn Python!</p>
+          <p>
+            <span class="person"></span> you should learn Python!</p>
         </div>
+        
         <div id="go">
           <h3>Go</h3>
-          <p>You should learn Go!</p>
+          <p>
+            <span class="person"></span> you should learn Go!
+          </p>
         </div>
+        
         <div id="javascript">
           <h3>Javascript</h3>
-          <p>You should learn Javascript!</p>
+          <p>
+            <span class="person"></span> you should learn Javascript!
+          </p>
         </div>
+        
         <div id="cobol">
           <h3>COBOL</h3>
-          <p>You should learn COBOL! Although it's probably a good chance you're already know it and making good skrilla consulting!</p>
+          <p>
+            <span class="person"></span> you should learn COBOL! Although it's probably a good chance you're already know it and making good skrilla consulting!
+          </p>
         </div>
     </div> <!--Closing Div for results-->
 

@@ -9,6 +9,7 @@ $(document).ready(function() {
     $("#javascript").hide();
     $("#cobol").hide();
     event.preventDefault();
+    const personInput = $("input#person").val();
     const gender = parseInt($("#gender").val());
     const age = parseInt($("input#age").val());
     const wallet = parseInt($("input:radio[name=wallet]:checked").val());
@@ -35,6 +36,8 @@ $(document).ready(function() {
         $('#javascript').show();
     } else {
       alert('Please enter your age.');
-    }   
+    }
+    
+    $(".person").text(personInput);
   });
 });

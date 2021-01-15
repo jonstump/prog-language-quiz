@@ -12,7 +12,6 @@
   display: none;
 } 
 
-
 /* Additional Page Styling*/
 body {
   background-color: #0B090A;
@@ -35,6 +34,11 @@ h3::before {
   content: "\a";
   white-space: pre;
 }
+#quiz {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Styling for results */
 
@@ -42,10 +46,15 @@ h3::before {
   background-color: #161A1D;
   margin: 1px;
   padding: 1px;
-  width: 70%;
+  width: 60%;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#results h2 {
+  text-align: center;
+  color: #660708;
 }
 
 #results h3 {

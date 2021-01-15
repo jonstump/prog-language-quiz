@@ -30,7 +30,13 @@
   white-space: pre;
 }
 
+
 /* Additional Page Styling*/
+body {
+  background-color: #2B2D42;
+  color: #EDF2F4;
+}
+
 .box {
   height: 300px;
   border: 5px;

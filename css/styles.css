@@ -40,6 +40,12 @@ h3::before {
 
 #results {
   background-color: #8D99AE;
+  margin: 1px;
+  padding: 1px;
+  width: 70%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #results h3 {
@@ -49,4 +55,6 @@ h3::before {
 #results img {
   width: 300px;
   height: auto;
+  float: left;
 }
+

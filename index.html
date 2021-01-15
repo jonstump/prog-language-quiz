@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Programmer Quiz</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Programmer Quiz</h1>
+
+    <p>Take the following quiz to get a program language suggestion</p>
+
+    <form id="quiz">
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">N/A</option>
+      </select>
+      
+      <label for="age">Age</label>
+      <input id="age" type="text">
+      
+      <h3>Question 3</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="Q3V1Name" value="Q3V1Value" checked>
+          Q3V1Value
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="Q3V2Name" value="Q3V2Value">
+          Q3V2Value
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="Q3V3Name" value="Q3V3Value">
+          Q3V3Value
+        </label>
+      </div>
+      
+      <h3>Question 4</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="Q4V1Name" value="Q4V1Value" checked>
+          Q4V1Value
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="Q4V2Name" value="Q4V2Value">
+          Q4V2Value
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="Q4V3Name" value="Q4V3Value">
+          Q4V3Value
+        </label>
+      </div>
+
+
+      <button type="submit" class="btn">Show me my match!</button>
+    </form>
+    
+    <div id="results">
+      <div class="box">
+        <div id="langauge1">
+          <h3>language1</h3>
+          <p>Here's the result for 1</p>
+        </div>
+        <div id="langauge2">
+          <h3>language 2</h3>
+          <p>Here's the result for 1</p>
+        </div>
+        <div id="langauge3">
+          <h3>langauge3</h3>>
+          <p>Here's the result for 1</p>
+        </div>
+      </div>
+    </div>
+
+  </div> <!--This is the closing div for the form container-->
+</body>
+</html>

@@ -1,20 +1,27 @@
+const add = function add(wallet, wasp, mother) {
+  return wallet + wasp +mother;
+}
+
 $(document).ready(function() {
   $("#quiz").submit(function(event) {
-    $("#language1").hide();
-    $("#language2").hide();
-    $("#language3").hide();
+    $("#python").hide();
+    $("#go").hide();
+    $("#javascript").hide();
     event.preventDefault();
     const gender = $("#gender").val();
     const age = parseInt($("input#age").val());
     const wallet = parseInt($("input:radio[name=wallet]:checked").val());
-    const wasp = $parseInt(("input:radio[name=wasp]:checked").val());
-    const mother = $parseInt($("input:radio[name=mother]:checked").val());
+    const wasp = parseInt($("input:radio[name=wasp]:checked").val());
+    const mother = parseInt($("input:radio[name=mother]:checked").val());
+    const total = add(wallet, wasp, mother);
 
-    if (gender === ('male','female','other') && age < 100 && wallet + wasp + mother <= '3'){
+    if ((total <= 3)){
       $('#python').show();
-    } else if (gender === ('male','female','other') && age < 100 && wallet + wasp + mother <= '6'){
+    } else if ((total <= 6)){
       $('#go').show();
     } else 
       $('#javascript').show();
   });
 });
+
+//gender === ('male','female','other') && age < 100 && 

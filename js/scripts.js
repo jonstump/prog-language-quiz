@@ -7,6 +7,7 @@ $(document).ready(function() {
     $("#python").hide();
     $("#go").hide();
     $("#javascript").hide();
+    $("#cobol").hide();
     event.preventDefault();
     const gender = $("#gender").val();
     const age = parseInt($("input#age").val());
@@ -15,7 +16,9 @@ $(document).ready(function() {
     const mother = parseInt($("input:radio[name=mother]:checked").val());
     const total = add(wallet, wasp, mother);
 
-    if ((total <= 3)){
+    if (age > 55) {
+      $('#cobol').show();
+    } else if ((total <= 3)){
       $('#python').show();
     } else if ((total <= 6)){
       $('#go').show();
@@ -23,5 +26,3 @@ $(document).ready(function() {
       $('#javascript').show();
   });
 });
-
-//gender === ('male','female','other') && age < 100 && 

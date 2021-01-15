@@ -19,21 +19,21 @@ $(document).ready(function() {
 
     if (age) {
       if (age > 55) {
-        $('#cobol').show();
+        $('#cobol').fadeIn();
       } else if (gender === 1 && ((total <= 3))){
-        $('#python').show();
+        $('#python').fadeIn();
       } else if (gender === 1 && ((total <= 6))){
-        $('#go').show();
+        $('#go').fadeIn();
       } else if (gender === 2 && ((total <= 3))){
-        $('#python').show();
+        $('#python').fadeIn();
       } else if (gender === 2 && ((total <= 8))){
-        $('#go').show();
+        $('#go').fadeIn();
       } else if (gender === 3 && ((total <= 3))){
-        $('#python').show();
+        $('#python').fadeIn();
       } else if (gender === 3 && ((total <= 4))){
-        $('#go').show();
+        $('#go').fadeIn();
       } else 
-        $('#javascript').show();
+        $('#javascript').fadeIn();
     } else {
       alert('Please enter your age.');
     }

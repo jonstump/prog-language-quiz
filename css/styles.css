@@ -46,3 +46,7 @@ h3::before {
   color: #EF233C;
 }
 
+#results img {
+  width: 300px;
+  height: auto;
+}

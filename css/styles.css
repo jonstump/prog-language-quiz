@@ -12,39 +12,37 @@
   display: none;
 }
 
-/* Styling for results */
-#python::before{
-  content: "\a";
-  white-space: pre;
-}
-#go::before{
-  content: "\a";
-  white-space: pre;
-}
-#javascript::before{
-  content: "\a";
-  white-space: pre;
-}
-#cobol::before{
-  content: "\a";
-  white-space: pre;
-}
-
-
 /* Additional Page Styling*/
 body {
   background-color: #2B2D42;
   color: #EDF2F4;
 }
 
-.box {
-  height: 300px;
-  border: 5px;
-  box-sizing: border-box;
+body h3 {
+  color: #8D99AE;
 }
 
-h3::before{
+/* Styling for the questions section */
+#questions {
+  background-color: #8D99AE;
+}
+
+#questions h3 {
+  color: #2B2D42;
+}
+
+h3::before {
   content: "\a";
   white-space: pre;
+}
+
+/* Styling for results */
+
+#results {
+  background-color: #8D99AE;
+}
+
+#results h3 {
+  color: #EF233C;
 }
 

@@ -20,17 +20,17 @@ $(document).ready(function() {
     if (age) {
       if (age > 55) {
         $('#cobol').fadeIn();
-      } else if (gender === 1 && ((total <= 3))){
+      } else if (gender === 1 && ((total <= 5))){
         $('#python').fadeIn();
-      } else if (gender === 1 && ((total <= 6))){
+      } else if (gender === 1 && ((total <= 10))){
         $('#go').fadeIn();
-      } else if (gender === 2 && ((total <= 3))){
+      } else if (gender === 2 && ((total <= 6))){
         $('#python').fadeIn();
-      } else if (gender === 2 && ((total <= 8))){
+      } else if (gender === 2 && ((total <= 12))){
         $('#go').fadeIn();
-      } else if (gender === 3 && ((total <= 3))){
+      } else if (gender === 3 && ((total <= 5))){
         $('#python').fadeIn();
-      } else if (gender === 3 && ((total <= 4))){
+      } else if (gender === 3 && ((total <= 13))){
         $('#go').fadeIn();
       } else 
         $('#javascript').fadeIn();

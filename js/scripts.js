@@ -9,18 +9,20 @@ $(document).ready(function() {
     $("#javascript").hide();
     $("#cobol").hide();
     event.preventDefault();
-    const gender = $("#gender").val();
+    const gender = parseInt($("#gender").val());
     const age = parseInt($("input#age").val());
     const wallet = parseInt($("input:radio[name=wallet]:checked").val());
     const wasp = parseInt($("input:radio[name=wasp]:checked").val());
     const mother = parseInt($("input:radio[name=mother]:checked").val());
     const total = add(wallet, wasp, mother);
 
-    if (age > 55) {
-      $('#cobol').show();
-    } else if ((total <= 3)){
+    if (gender === 1 && ((total <= 3))){
       $('#python').show();
-    } else if ((total <= 6)){
+    } else if (gender === 1 && ((total <= 6))){
+      $('#go').show();
+    } else if (gender === (2,3) && ((total <= 3))){
+      $('#python').show();
+    } else if (gender === (2,3) && ((total <= 8))){
       $('#go').show();
     } else 
       $('#javascript').show();

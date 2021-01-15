@@ -13,81 +13,86 @@
 
     <p>Take the following quiz to get a program language suggestion</p>
 
-    <form id="quiz">
-      <label for="gender">Gender</label>
-      <select id="gender">
-        <option value="1">Female</option>
-        <option value="2">Male</option>
-        <option value="3">N/A</option>
-      </select>
-      
-      <label for="age">Age</label>
-      <input id="age" type="text">
-      
-      <h3>Question 1</h3>
-      <p>Someone gives you a calfskin wallet for your birthday. How do you react?</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="wallet" value="1" checked>
-          I wouldn't accept it.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="wallet" value="2">
-          Say, "Thank you for the wallet!"
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="wallet" value="3">
-          I would appreciate it.
-        </label>
-      </div>
-      
-      <h3>Question 2</h3>
-      <p>You're watching television. Suddenly you spot a wasp crawling on your arm. How do you react?</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="wasp" value="1" checked>
-          I scream, then grab the closest object to me (which happens to be a can of sunscreen) and beat the hell out of it.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="wasp" value="2">
-          I swat it away.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="wasp" value="3">
-          I simply kill it.
-        </label>
-      </div>
-
-      <h3>Question 3</h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="mother" value="1" checked>
-          Warm voices, cookies.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="mother" value="2">
-          Music. Love. Summer. Sun. Books. Movies. Friends. Laughter
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="mother" value="3">
-          My mother... I'll tell you about my mother.
-        </label>
-      </div>
-
-
-      <button type="submit" class="btn">Show me my match!</button>
+    <div class="form-group">
+      <form id="quiz">
+        <div class="row">
+          <div class="col">
+            <label for="gender">Gender</label>
+            <select class="form-control" id="gender">
+              <option value="1">Female</option>
+              <option value="2">Male</option>
+              <option value="3">N/A</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="age">Age</label>
+            <input id="age" type="text" class="form-control">
+          </div>
+        </div>
+        
+        <h3>Question 1</h3>
+        <p>Someone gives you a calfskin wallet for your birthday. How do you react?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="wallet" value="1" checked>
+            I wouldn't accept it.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="wallet" value="2">
+            Say, "Thank you for the wallet!"
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="wallet" value="3">
+            I would appreciate it.
+          </label>
+        </div>
+        
+        <h3>Question 2</h3>
+        <p>You're watching television. Suddenly you spot a wasp crawling on your arm. How do you react?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="wasp" value="1" checked>
+            I scream, then grab the closest object to me (which happens to be a can of sunscreen) and beat the hell out of it.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="wasp" value="2">
+            I swat it away.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="wasp" value="3">
+            I simply kill it.
+          </label>
+        </div>
+  
+        <h3>Question 3</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="mother" value="1" checked>
+            Warm voices, cookies.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="mother" value="2">
+            Music. Love. Summer. Sun. Books. Movies. Friends. Laughter
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="mother" value="3">
+            My mother... I'll tell you about my mother.
+          </label>
+        </div>
+    </div>
+      <button type="submit" class="btn btn-dark btn-block">Show me my match!</button>
     </form>
     
     <div id="results">

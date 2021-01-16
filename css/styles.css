@@ -11,6 +11,9 @@
 #cobol {
   display: none;
 } 
+#results {
+  display: none;
+}
 
 /* Additional Page Styling*/
 body {
@@ -45,7 +48,7 @@ body p {
 #results {
   background-color: #161A1D;
   width: 60%;
-  height: 300px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -60,8 +63,8 @@ body p {
 }
 
 #results img {
-  width: 300px;
-  height: auto;
+  height: 300px;
+  width: auto;
   float: left;
 }
 

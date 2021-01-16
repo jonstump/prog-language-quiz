@@ -52,7 +52,7 @@ This quiz can be taken via it's [gh-page](https://jonstump.github.io/URL HERE/)
 * [Blade Runner](https://www.imdb.com/title/tt0083658/)
 
 ## Known Bugs
-
+* No alert for blank user name
 
 ## License
 [MIT](https://mit-license.org/)

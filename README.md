@@ -40,7 +40,7 @@ $ git clone https://github.com/jonstump/prog-language-quiz HERE
 * After you have the folder open that you cloned from Github.com double click the file "index.html"
 * The webpage should open in the default browser set by your machines settings
 
-This quiz can be taken via it's [gh-page](https://jonstump.github.io/URL HERE/)
+This quiz can be taken via it's [gh-page](https://jonstump.github.io/prog-language-quiz/)
 
 ## Sources Used
 * [Epicodus](https://www.epicodus.com/)
